@@ -6,10 +6,13 @@ public class MarshmallowMonster
 	private int monsterEyes;
 	private int monsterNoses;
 	private double monsterHair;
-	private double monsterlegs;
+	private double monsterLegs;
 	private boolean monsterBellyButton;
 	
 	private MarshmallowMonster()
+	{
+		
+	}
 	
 	public MarshmallowMonster(String monsterName, int monsterEyes, int monsterNoses, double monsterHair, double monsterLegs, boolean monsterBellyButton )
 	
@@ -20,5 +23,12 @@ public class MarshmallowMonster
 		this.monsterLegs = monsterLegs;
 		this.monsterHair = monsterHair;
 		this.monsterBellyButton = monsterBellyButton;
+	}
+	
+	public String toString()
+	{
+		String monster = "This monster has " + monsterEyes + " eyes, " + monsterHair + " hair, " + monsterNoses + " nose, " + monsterLegs + " legs, " + "no belly button," + " and its' name is " + monsterName;
+		
+		return monster;
 	}
 }
